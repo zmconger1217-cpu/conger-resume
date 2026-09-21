@@ -150,6 +150,76 @@ button{font:inherit}
   .tool-table th{width:95px}
   .actions{flex-wrap:wrap}
 }
+/* Mobile refinement: keep the resume readable on real narrow screens. */
+@media (max-width:620px){
+  .resume{width:calc(100% - 16px);margin:8px auto;border-radius:18px}
+  .sidebar{padding:22px 18px 24px}
+  .main{padding:24px 18px 34px}
+  .portrait{width:96px;height:118px;margin-bottom:14px;border-width:4px}
+  .eyebrow{font-size:10px;letter-spacing:.1em;line-height:1.6;overflow-wrap:anywhere}
+  .name{margin-top:13px;font-size:30px}
+  .name small{margin-top:4px;font-size:14px}
+  .role{margin-top:17px;font-size:14px}
+  .role-note{font-size:11px;line-height:1.6}
+  .contact{margin-top:22px;padding-top:18px}
+  .contact-item{gap:8px;margin:10px 0;font-size:11.5px;line-height:1.55}
+  .contact-item b{width:16px;font-size:12px}
+  .contact-item a,.material{overflow-wrap:anywhere;word-break:break-word}
+  .side-card{margin-top:22px;padding:15px;border-radius:14px}
+  .side-card h3{margin-bottom:7px;font-size:11px}
+  .side-card p{font-size:11.5px;line-height:1.7}
+  .tags{gap:6px;margin-top:12px}
+  .tag{padding:5px 8px;font-size:10px}
+  .actions{gap:8px;margin-top:20px}
+  .action{flex:1;min-width:0;min-height:40px;padding:8px 10px}
+  .hero{padding-bottom:22px}
+  .hero h2{font-size:24px}
+  .hero p{font-size:12px;line-height:1.7}
+  .section{margin-top:25px}
+  .section-head{gap:10px;margin-bottom:11px}
+  .section h3{font-size:11px;letter-spacing:.1em}
+  .section-head span{font-size:10px}
+  .skill{padding:13px 14px}
+  .skill b{font-size:12px}
+  .skill p{font-size:11.5px;line-height:1.7}
+  .project{padding:16px 15px 15px}
+  .project h4{font-size:15px;line-height:1.45;overflow-wrap:anywhere}
+  .project .date{font-size:10px;white-space:normal}
+  .project ul,.simple-list{font-size:11.5px;line-height:1.7;padding-left:17px}
+  .project li,.simple-list li{margin:5px 0}
+  .chip{overflow-wrap:anywhere}
+  .metrics{gap:8px}
+  .metric{padding:12px 10px}
+  .metric strong{font-size:17px;overflow-wrap:anywhere}
+  .metric span{font-size:9px}
+  .tool-table{table-layout:fixed;word-break:break-word}
+  .tool-table th,.tool-table td{padding:10px;overflow-wrap:anywhere}
+  .tool-table th{width:88px;min-width:88px}
+  .materials{gap:8px}
+  .material{padding:11px 12px;font-size:11.5px;line-height:1.65}
+  .footer-note{font-size:10px;line-height:1.6}
+  .toast{right:12px;bottom:12px;left:12px;text-align:center}
+}
+@media (max-width:360px){
+  .resume{width:calc(100% - 12px);margin:6px auto;border-radius:16px}
+  .sidebar{padding:18px 15px 20px}
+  .main{padding:20px 15px 28px}
+  .portrait{width:92px;height:114px}
+  .eyebrow{font-size:9.5px;letter-spacing:.08em}
+  .name{font-size:28px}
+  .role{font-size:13px}
+  .role-note{font-size:10.5px}
+  .contact-item{font-size:11px}
+  .side-card{padding:13px}
+  .tag{padding:4px 7px;font-size:9.5px}
+  .hero h2{font-size:22px}
+  .hero p{font-size:11.5px}
+  .section{margin-top:22px}
+  .project{padding:14px 13px}
+  .project h4{font-size:14px}
+  .project ul,.simple-list{font-size:11px}
+  .metric strong{font-size:16px}
+}
 @media print{
   @page{size:A4;margin:11mm}
   body{background:#fff;color:#2d2440}
